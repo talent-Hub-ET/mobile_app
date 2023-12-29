@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app/Pages/CatagoriesPage.dart';
+import 'package:mobile_app/Pages/CoursesPage.dart';
 import 'package:mobile_app/Pages/LoginScreen.dart';
 
 void main() {
@@ -64,6 +65,17 @@ class _MyHomePageState extends State<MyHomePage> {
                   );
                 },
                 child: const Text('Catagories Screen'),
+              ),
+            ),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => CoursePage()),
+                  );
+                },
+                child: const Text('Courses Screen'),
               ),
             ),
           ],
