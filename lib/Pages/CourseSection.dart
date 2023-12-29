@@ -61,13 +61,52 @@ class CourseSection extends StatelessWidget {
                       ),
                     ),
                     SizedBox(height: 12.0),
-                    // Replace with actual progress percentage
+                    _ProgressBar(
+                        progress:
+                            70), // Replace with actual progress percentage
                   ],
                 ),
               ),
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _ProgressBar extends StatelessWidget {
+  final int progress;
+
+  const _ProgressBar({Key? key, required this.progress}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 20.0,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10.0),
+        color: Colors.grey.withOpacity(0.5),
+      ),
+      child: Stack(
+        children: [
+          Container(
+            width: double.infinity * (progress / 100),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10.0),
+              color: Colors.blue, // Change the progress bar color as needed
+            ),
+          ),
+          Center(
+            child: Text(
+              '$progress%', // Display the progress percentage in the middle
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
