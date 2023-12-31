@@ -138,7 +138,7 @@ class CoursePage extends StatelessWidget {
               ),
               SizedBox(height: 16.0),
               Container(
-                height: 220.0,
+                height: 260.0,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
@@ -179,7 +179,7 @@ class CoursePage extends StatelessWidget {
               ),
               SizedBox(height: 16.0),
               Container(
-                height: 190.0,
+                height: 250.0,
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: ListView(
