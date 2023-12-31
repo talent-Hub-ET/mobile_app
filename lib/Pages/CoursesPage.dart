@@ -138,7 +138,7 @@ class CoursePage extends StatelessWidget {
               ),
               SizedBox(height: 16.0),
               Container(
-                height: 200.0,
+                height: 220.0,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
@@ -179,31 +179,34 @@ class CoursePage extends StatelessWidget {
               ),
               SizedBox(height: 16.0),
               Container(
-                height: 120.0,
-                child: ListView(
-                  scrollDirection: Axis.horizontal,
-                  children: [
-                    _MentorCard(
-                      image: 'assets/sample_mentor_picture_1.jpg',
-                      name: 'Alice Johnson',
-                      profession: 'Web Developer',
-                      courses: '5 Courses',
-                    ),
-                    SizedBox(width: 16.0),
-                    _MentorCard(
-                      image: 'assets/sample_mentor_picture_2.jpg',
-                      name: 'Bob Smith',
-                      profession: 'Data Scientist',
-                      courses: '8 Courses',
-                    ),
-                    SizedBox(width: 16.0),
-                    _MentorCard(
-                      image: 'assets/sample_mentor_picture_3.jpg',
-                      name: 'Eva Williams',
-                      profession: 'UI/UX Designer',
-                      courses: '3 Courses',
-                    ),
-                  ],
+                height: 190.0,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: [
+                      _MentorCard(
+                        image: 'assets/sample_mentor_picture_1.jpg',
+                        name: 'Alice Johnson',
+                        profession: 'Web Developer',
+                        courses: '5 Courses',
+                      ),
+                      SizedBox(width: 16.0),
+                      _MentorCard(
+                        image: 'assets/sample_mentor_picture_2.jpg',
+                        name: 'Bob Smith',
+                        profession: 'Data Scientist',
+                        courses: '8 Courses',
+                      ),
+                      SizedBox(width: 16.0),
+                      _MentorCard(
+                        image: 'assets/sample_mentor_picture_3.jpg',
+                        name: 'Eva Williams',
+                        profession: 'UI/UX Designer',
+                        courses: '3 Courses',
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
