@@ -183,7 +183,7 @@ class _JobDetailState extends State<JobDetail> {
                 style: TextStyle(
                     fontWeight: FontWeight.w700,
                     fontSize: 11.5,
-                    color: Color.fromRGBO(24, 26, 31, 0.75)),
+                    color: Color.fromRGBO(24, 25, 31, 0.75)),
               ),
               SizedBox(
                 height: 10,
